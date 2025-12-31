@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>˚୨୧⋆｡˚⋆Happy New Year⋆˚｡⋆୨୧˚</title>
+		<style>
+			body {
+				font-family: Times new roman, times new roman;
+				background: linear-gradient(to right, #fbd3e9, #bb377d);
+				text-align: center;
+				padding: 40px;
+				overflow: auto;
+				min-height: 100vh;
+			}
+		
+			body::before {
+				content: "";
+				position: fixed;
+				inset: 0;
+				pointer-events: none;
+				z-index: 0;
+
+				background-image:
+					radial-gradient(2px 2px at 20px 20px, rgba(255,255,255,0.9), transparent),
+					radial-gradient(2px 2px at 60px 40px, rgba(255,220,240,0.8), transparent),
+					radial-gradient(1.5px 1.5px at 100px 80px, rgba(255,245,250,0.8), transparent),
+					radial-gradient(2px 2px at 40px 100px, rgba(255,230,245,0.7), transparent),
+					radial-gradient(1.5px 1.5px at 80px 10px, rgba(255,255,255,0.7), transparent);
+				background-size: 120px 120px;   
+				background-repeat: repeat;
+				animation: sparkleMove 12s linear infinite;
+				filter: blur(0.3px);
+			}
+
+			@keyframes sparkleMove {
+				0% { background-position: 0 0; }
+				100% {background-position: 0-120px;}
+			}
+
+			@keyframes dreamyTwinkle {
+				0% { opacity: 0.6; transform: translateY(0); }
+				50% { opacity: 1; }
+				100% { opacity: 0.6; transform: translateY(-20px); }
+			}
+
+			.container {
+				background: rgba(255,255,255,0.92);
+				padding: 30px;
+				border-radius: 15px;
+				max-width: 700px;
+				margin: auto;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+				position: relative;
+				z-index: 1;
+			}
+
+			.container::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background-image:
+					radial-gradient(4px 4px at 5% 10%, rgba(255,255,255,0.9), transparent),
+					radial-gradient(4px 4px at 15% 30%, rgba(255,230,245,0.9), transparent),
+					radial-gradient(4px 4px at 25% 50%, rgba(255,255,255,0.9), transparent),
+					radial-gradient(4px 4px at 35% 70%, rgba(255,220,240,0.9), transparent),
+					radial-gradient(4px 4px at 45% 20%, rgba(255,245,250,0.9), transparent),
+					radial-gradient(4px 4px at 55% 40%, rgba(255,230,245,0.9), transparent),
+					radial-gradient(4px 4px at 65% 60%, rgba(255,255,255,0.9), transparent),
+					radial-gradient(4px 4px at 75% 80%, rgba(255,220,240,0.9), transparent),
+					radial-gradient(4px 4px at 85% 30%, rgba(255,245,250,0.9), transparent),
+					radial-gradient(4px 4px at 95% 50%, rgba(255,230,245,0.9), transparent),
+				 
+					radial-gradient(3px 3px at 10% 70%, rgba(255,255,255,0.8), transparent),
+					radial-gradient(3px 3px at 20% 90%, rgba(255,220,240,0.8), transparent),
+					radial-gradient(3px 3px at 30% 15%, rgba(255,245,250,0.8), transparent),
+					radial-gradient(3px 3px at 40% 35%, rgba(255,230,245,0.8), transparent),
+					radial-gradient(3px 3px at 50% 55%, rgba(255,255,255,0.8), transparent),
+					radial-gradient(3px 3px at 60% 75%, rgba(255,220,240,0.8), transparent),
+					radial-gradient(3px 3px at 70% 95%, rgba(255,245,250,0.8), transparent),
+					radial-gradient(3px 3px at 80% 10%, rgba(255,230,245,0.8), transparent),
+					radial-gradient(3px 3px at 90% 30%, rgba(255,255,255,0.8), transparent),
+					 
+					radial-gradient(2px 2px at 8% 85%, rgba(255,255,255,0.7), transparent),
+					radial-gradient(2px 2px at 18% 5%, rgba(255,220,240,0.7), transparent),
+					radial-gradient(2px 2px at 28% 65%, rgba(255,245,250,0.7), transparent),
+					radial-gradient(2px 2px at 38% 45%, rgba(255,230,245,0.7), transparent),
+					radial-gradient(2px 2px at 48% 25%, rgba(255,255,255,0.7), transparent),
+					radial-gradient(2px 2px at 58% 85%, rgba(255,220,240,0.7), transparent),
+					radial-gradient(2px 2px at 68% 5%, rgba(255,245,250,0.7), transparent),
+					radial-gradient(2px 2px at 78% 65%, rgba(255,230,245,0.7), transparent),
+					radial-gradient(2px 2px at 88% 45%, rgba(255,255,255,0.7), transparent),
+					radial-gradient(2px 2px at 98% 25%, rgba(255,220,240,0.7), transparent);
+
+				animation: sparkleFloat 8s ease-in-out infinite;
+				pointer-events: none;
+				border-radius: 15px;
+				filter: blur(0.4px)
+			}
+
+			.envelope {
+				display: inline-block;
+				width: 160px;
+				height: 110px;
+				background: #ff6f91;
+				margin: 15px;
+				border-radius: 10px;
+				position: relative;
+				cursor: pointer;
+			}
+
+			.envelope {
+				display: inline-block;
+				width: 160px;
+				height: 110px;
+				background: #ff6f91;
+				margin: 15px;
+				border-radius: 10px;
+				position: relative;
+				cursor: pointer;
+			}
+
+			.envelope::before {
+				content: '';
+				position: absolute;
+				top: 1px;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 80px solid transparent;
+				border-right: 80px solid transparent;
+				border-top: 55px solid #ff9671;
+			}
+
+			.name {
+				position: absolute;
+				bottom: 10px;
+				width: 100%;
+				text-align: center;
+				font-weight: bold;
+				color: white;
+			}
+
+			.letter {
+				display: none;
+				margin-top: 25px;
+				text-align: left;
+				font-size: 20px;
+				line-height: 1.8;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>˚୨୧⋆｡˚⋆Happy New Year⋆˚｡⋆୨୧˚</h1>
+		<p>Click your envelope and enter your personal code sent via DM.</p>
+		<div class="envelope" onclick="openLetter('friend1')">
+			<div class="name">CHANLOI</div>
+		</div>
+		<div class="envelope" onclick="openLetter('friend2')">
+			<div class="name">ZY</div>
+		</div>
+		<div class="envelope" onclick="openLetter('friend3')">
+			<div class="name">LYR</div>
+		</div>
+		
+		<div id="friend1" class="letter">
+			<h2>To Chanloi:</h2>
+			
+			<p>Hello Kuya!! This might seem cheesy for you, but I still want you to feel the holidays even through this small present I prepared for my friends. Yes, you are a part of my so-called “friends”. We met through the most unexpected place and during the most unexpected time. Who would’ve thought that you’ll know too many things about me or I would know so much about you? We might’ve met almost during half of the year, but I could say that knowing you was one of the best things that happened. I didn’t only gain a friend, I gained a kuya, a tatay.</p>
+		
+			<p>I know this year was tough. I mean, when did it become light? Regardless, I want you to know that I’m proud of you for making it through the year and for everything that you’ve achieved, whether that’s a small or a big win. You have no idea how much the late-night talks and playing saved a thousand cries for help. It might seem like a little bit exaggerated, but Lord knows how it saved me in many different ways. Honestly speaking, those laughs meant a lot. The stories were filled with values that not everyone could catch.</p>
+		
+			<p>I wish and pray that this year 2026 will bless you the way that you deserve. May this letter remind you that there will always be someone cheering, praying, and proud of every step you take. If the mountain seems a bit too steep, there will always be a helping hand ready to help you make your way to the top. Time won’t stop no matter what happens, but that doesn’t mean you need to rush. Cherish every moment and be happy with every result it brings, regardless of it being a win or a lesson.</p>
+		
+			<p>-Vie ♡⸜(˶˃ ᵕ ˂˶)⸝♡</p>
+			
+			<audio id="audio-friend1" src="chanloi.mp3"></audio>
+		</div>
+
+		<div id="friend2" class="letter">
+			<h2>To Zy:</h2>
+			
+			<p>Hello Zy!! The world might see you as the always angry Zy, but in my eyes, mind, and heart, you’re Nacho. I do believe that it’s not anger that you show. It’s the shout of truth and wanting to be heard for your own voice. And I want you to know that I can hear it. I can read between the lines. Maybe not every line that you can draw, but I am trying. I’m trying not because I want to show you that I’m different but because even just with me, I want you to feel that you can be free from the chaotic world that you’re facing.</p>
+		
+			<p>We met in the most unexpected time, place, and situation. Who would’ve thought that on a random day someone would just rant about a group of friends and ask for help to look for them would lead to us being like this?This year is a roller coaster; every year is, and I’m proud of you for surviving. I’m proud of every step you’ve made. Every achievement you’ve had and will have is always a blessing. May this letter remind you that there will always be someone who is cheering for you in every battle you will face, someone who is willing to celebrate even your smallest wins, someone who will help make things lighter when the clouds are a bit too heavy. I hope the warmth I bring to you will help you in any way it could. </p>
+		
+			<p>I wish and pray that your 2026 will be filled with blessings and may the universe serve you the way that you deserve. May you win all of your battles and the stars align to your will. A new year might come, but I’m happy to continue this friendship with you.</p>
+		
+			<p>-Vie ♡⸜(˶˃ ᵕ ˂˶)⸝♡</p>
+
+			<audio id="audio-friend2" src="zy.mp3"></audio>
+		</div>
+
+		<div id="friend3" class="letter">
+			<h2>To Lyr:</h2>
+			
+			<p>Hello Lyr!! Who would’ve known that through a simple game I would meet you and the others. The world really does move in the most unexpected ways. It never crossed my mind that I would find friendship through a game I play just because I felt I was lonely. An ordinary day turned into one of the most memorable ones. I might not be able to see you fight through the other years you’ve conquered, but I’m so proud of you for doing so.</p>
+	
+			<p>This year was a roller coaster for everyone, and I’m glad I get to ride this roller coaster with you. Laughing with you through every high and still being here with you through your lows. I understand that there are fights that you had to deal with alone. Those were the things that made you question life and most especially yourself. The universe will always give you a reason to give up, but that’s not a sign for you to stop. Those are signs of life. Life will always be painful, and who knows what this new year will bring. Fear of the unknown will always be the toughest enemy we somehow can’t overcome, but it builds us to be the strongest versions of ourselves.</p>
+	
+			<p>There will always come a time when you’ll feel lonely and lost; it’s normal. However, sometimes it’s just a thought that’s trying to pull you down. You’re never alone, Lyr. There are people who loves and support you in everything that you do. If you doubt that, I am one of those people. Regardless of how far you are, or how many things I still don’t know about you. I love everything about you. If the crowd seems too quiet, I won’t hesitate to cheer you up even from afar.</p>
+			
+			<p>I wish and pray that this year, 2026, will give you the things that you deserve. May the universe never stop giving you a reason to be strong and to continue living life to the fullest.</p>
+	
+			<p>-Vie ♡⸜(˶˃ ᵕ ˂˶)⸝♡</p>
+
+			<audio id="audio-friend3" src="lyr.mp3"></audio>
+		</div>
+	</div>
+	
+	<script>
+		const codes = {
+			friend1: "CHN123",
+			friend2: "ZYM456",
+			friend3: "LYR789"
+		};
+		function openLetter(friend) {
+			let input = prompt("Enter your personal code:");
+			if (input === codes[friend]) {
+				document.querySelectorAll('.letter').forEach(l => l.style.display = "none");
+				document.getElementById(friend).style.display = "block";
+				document.querySelectorAll('.envelope').forEach(e => e.style.display = "none");
+				document.getElementById("audio-" + friend).play();
+			} else {
+				alert("mali code mo boi");
+			}
+		}
+	</script>
+	
+	</body>
+
+</html>
